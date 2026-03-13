@@ -1,3 +1,14 @@
+---
+title: Jina Reranker V3
+emoji: 🦀
+colorFrom: purple
+colorTo: yellow
+sdk: docker
+pinned: false
+license: apache-2.0
+short_description: jina-reranker-v3 background rerank service
+---
+
 # jina-reranker-v3-service
 
 Background rerank service for `jina-reranker-v3-GGUF`, designed for separate deployment from your embedding service.
