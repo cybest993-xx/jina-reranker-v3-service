@@ -30,7 +30,7 @@ RUN python3 -m pip install --break-system-packages --no-cache-dir numpy safetens
 WORKDIR /opt
 RUN git clone --depth=1 --branch "${LLAMA_CPP_REF}" "${LLAMA_CPP_REPO}" /opt/llama.cpp
 WORKDIR /opt/llama.cpp
-RUN cmake -S . -B build -DCMAKE_BUILD_TYPE=Release \
+RUN cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DLLAMA_CURL=OFF \
     && cmake --build build --config Release --target llama-embedding llama-tokenize -j2
 
 WORKDIR /workspace
