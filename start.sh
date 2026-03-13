@@ -44,12 +44,18 @@ find_bin() {
 
 LLAMA_EMBEDDING_PATH="$(find_bin llama-embedding \
   /usr/local/bin/llama-embedding \
+  /opt/llama.cpp/llama-embedding \
+  /opt/llama.cpp/bin/llama-embedding \
+  /opt/llama.cpp/build/bin/llama-embedding \
   /opt/llama/llama-embedding \
   /opt/llama/bin/llama-embedding \
   /opt/llama/build/bin/llama-embedding)"
 
 LLAMA_TOKENIZE_PATH="$(find_bin llama-tokenize \
   /usr/local/bin/llama-tokenize \
+  /opt/llama.cpp/llama-tokenize \
+  /opt/llama.cpp/bin/llama-tokenize \
+  /opt/llama.cpp/build/bin/llama-tokenize \
   /opt/llama/llama-tokenize \
   /opt/llama/bin/llama-tokenize \
   /opt/llama/build/bin/llama-tokenize)"

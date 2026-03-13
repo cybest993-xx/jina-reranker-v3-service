@@ -54,7 +54,7 @@ curl -X POST http://localhost:7860/v1/rerank \
 ## Notes
 
 - This service is intended for Hugging Face Spaces or other lightweight background deployments.
-- It builds `llama-embedding` and `llama-tokenize` from Hanxiao's `llama.cpp` fork (`master` branch) using CMake. `LLAMA_CURL` is disabled because this image downloads assets separately during build and does not need llama.cpp's curl feature.
+- It builds `llama-embedding` and `llama-tokenize` from Hanxiao's `llama.cpp` fork (`master` branch) using CMake under `/opt/llama.cpp/build/bin`. `LLAMA_CURL` is disabled because this image downloads assets separately during build and does not need llama.cpp's curl feature.
 - Authentication accepts either:
   - `Authorization: Bearer <API_KEY>`
   - `Authorization: <API_KEY>`
