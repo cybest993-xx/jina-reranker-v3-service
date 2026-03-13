@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1
 
 ARG LLAMA_CPP_REPO=https://github.com/hanxiao/llama.cpp.git
-ARG LLAMA_CPP_REF=main
+ARG LLAMA_CPP_REF=master
 ARG MODEL_URL=https://huggingface.co/jinaai/jina-reranker-v3-GGUF/resolve/main/jina-reranker-v3-BF16.gguf
 ARG PROJECTOR_URL=https://huggingface.co/jinaai/jina-reranker-v3-GGUF/resolve/main/projector.safetensors
 ARG RERANK_PY_URL=https://huggingface.co/jinaai/jina-reranker-v3-GGUF/resolve/main/rerank.py
